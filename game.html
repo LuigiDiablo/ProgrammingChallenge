@@ -1,0 +1,110 @@
+<html lang='en'>
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge - Marcus</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./game.css">
+    <script src="./game.js"></script>
+    <script src="./modal.js"></script>
+    <script src="./apiService.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./manual.html">Manual</a>
+        <a href="./game.html">Game</a>
+        <a class="right" onclick="showModal()">Login</a>
+    </div>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p>Login with dummy data</p>
+          <div> Email: <input id="email" type="email" value="eve.holt@reqres.in" required readonly></div> <br>
+          <div> Password: <input id="pw" type="password" value="cityslicka" required readonly></div> <br>
+          <input class="btn" type="submit" value="Login" onclick="validateLogin()">
+          <p id="token" class="token">Token:</p>
+        </div>
+    </div>
+
+    <div id="space" class="space-to-start" onkeypress="myFunction()">
+        <p> Press Space to start!</p>
+    </div>
+
+    <button class="save btn" onclick="save()">Save</button>
+
+    <div id="start-case" class="start-case">
+        <div class="area top">
+            <h1>Rock-Paper-Scissors</h1>
+        </div>
+
+        <div class="area middle">
+            <div id="middle-wrapper" class="middle-wrapper">
+                <h2 id="rounds">ROUND 0</h2>
+                <div class="vs-block">
+                    <div id="choice-player-a" class="vs-item player">
+                        choose
+                    </div>
+                    <div class="vs-item middle">
+                        <b>vs.</b>
+                    </div>
+                    <div id="choice-player-b" class="vs-item player">
+                        waiting
+                    </div>
+                </div>
+            </div>
+            <div id="stats" class="stats">
+                <h2>Stats:</h2>
+                <p id="stats-text">
+                    "Player A wins 31 of 100 games"
+                    "Player B wins 37 of 100 games"
+                    "Tie: 32 of 100 games"
+                    "Winner is: Player B  (37 to 31 wins)"
+                </p>
+                <div class="play-next-wrapper">
+                    <button class="play-next btn" onclick="nextGame()">Play next game</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="area-bottom" class="area bottom">
+            <div class="points-bar">
+                <div class="player-points">
+                    Player A
+                    <div id="points-player-a" class="point-count">0P</div>
+                </div>
+                <div class="flex-item"> Points:</div>
+                <div class="player-points">
+                    Player B
+                    <div id="points-player-b" class="point-count">0P</div>
+                </div>
+            </div>
+            <div id="selection" class="selection">
+                <div class="selection-title">Choose one!</div>
+                <div class="selection-bar">
+                    <button class="selection-option btn" onclick="play('rock')">Rock</button>
+                    <button class="selection-option btn" onclick="play('paper')">Paper</button>
+                    <button class="selection-option btn" onclick="play('scissors')">Scissors</button>
+                </div>
+                <div class="selection-bar">
+                    <button class="selection-option paper-only btn" onclick="play100('paper')">
+                        Player A chooses every time paper
+                        <div class="hint">Fill to round 100</div>
+                    </button>
+                </div>
+            </div>
+            <div id="to-stats" class="to-stats">
+                <button class="btn" onclick="goToStats()">Go to Stats</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

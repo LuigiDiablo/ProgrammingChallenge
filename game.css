@@ -1,0 +1,282 @@
+
+
+.start-case {
+    display: none;
+}
+
+.area {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 20em) {
+
+    .space-to-start {
+        font-size: 24px;
+        position: absolute;
+        height: calc(100% - 152px);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .save.btn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    /* Top area */
+    .area.top h1 {
+        font-size: 20px;
+        background-color: #888;
+        padding: 5px 30px;
+        margin-bottom: 8px;
+    }
+
+    /* Middle area */
+    .area.middle .middle-wrapper {
+        margin: 26px 0;
+    }
+
+    .area.middle .middle-wrapper h2 {
+        margin: 0;
+        background-color: #888;
+        padding: 18px 0;
+        justify-content: center;
+        display: flex;
+        font-size: 36px
+    }
+
+    .vs-block {
+        margin: 10px 0;
+        display: flex;
+    }
+
+    .vs-item {
+        background-color: #888;
+        width: 90px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px
+    }
+
+    .vs-item.middle {
+        background-color: #E1E2E1;
+        margin: 0;
+        font-size: 40px
+    }
+
+    .stats {
+        margin-top: 40px;
+        display: none;
+    }
+
+    .stats h2 {
+        text-align: center;
+    }
+
+    .stats p {
+        text-align: center;
+    }
+
+    .play-next-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .play-next.btn {
+        margin: 40px auto;
+    }
+
+    /* Bottom area */
+    .area.bottom {
+        display: block;
+    }
+
+    .points-bar {
+        width: 100%;
+        display: flex;
+    }
+
+    .points-bar .player-points {
+        float: left;
+        background-color: #888;
+        text-align: center;
+        padding: 12px 20px;
+        margin: 0 20px;
+        font-size: 14px;
+    }
+
+    .points-bar .flex-item {
+        padding: 12px 0;
+        text-align: center;
+        font-size: 18px;
+        flex: 1;
+    }
+
+    .point-count {
+        font-size: 18px;
+        margin: 4px 0px;
+    }
+
+    .selection {
+        margin: 20px 0;
+    }
+
+    .selection-title {
+        font-size: 24px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .selection-bar {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .selection-option {
+        margin: 0 16px;
+        padding: 12px 24px;
+        flex: auto;
+        width: 100px;
+    }
+
+    .selection-option.paper-only {
+        padding: 8px 24px;
+    }
+
+    .selection-option .hint {
+        font-size: 12px;
+    }
+
+    .to-stats {
+        margin-top: 40px;
+        display: none;
+        justify-content: center;
+    }
+
+    .to-stats .btn {
+        width: 140px;
+    }
+}
+
+@media only screen and (min-width: 40em) {
+    .space-to-start {
+        font-size: 48px;
+        height: calc(100% - 66px);
+    }
+
+    .save.btn {
+        top: 76px;
+    }
+
+    /* Top area */
+    .area.top h1 {
+        font-size: 30px;
+    }
+
+    /* Middle area */
+    .area.middle .middle-wrapper {
+        margin: 50px 0;
+    }
+
+    .area.middle .middle-wrapper h2 {
+        padding: 30px 0;
+        font-size: 60px
+    }
+    
+    .vs-item {
+        width: 190px;
+        height: 165px;
+        font-size: 24px
+    }
+
+    .vs-item.middle {
+        font-size: 50px
+    }
+
+    .play-next.btn {
+        padding: 24px 30px;
+        font-size: 24px;
+    }
+
+    /* Bottom area */
+    .points-bar .player-points {
+        padding: 24px 30px;
+        margin: 0 40px;
+    }
+
+    .points-bar .flex-item {
+        padding: 24px 30px;
+        font-size: 24px;
+    }
+
+    .point-count {
+        font-size: 24px;
+    }
+
+    .selection {
+        margin: 40px 0;
+    }
+
+    .selection-option {
+        margin: 0 40px;
+        padding: 24px 30px;
+        font-size: 24px;
+    }
+
+    .selection-option.paper-only {
+        padding: 16px 30px;
+    }
+
+    .selection-option .hint {
+        font-size: 16px;
+    }
+
+    .to-stats .btn {
+        padding: 24px 30px;
+        font-size: 24px;
+        width: 240px;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+
+    .space-to-start {
+        font-size: 40px;
+    }
+
+    /* Top area */
+    .area.top h1 {
+        font-size: 40px;
+    }
+
+    /* Middle area */
+    .vs-item {
+        width: 240px;
+        height: 190px;
+        font-size: 24px
+    }
+
+    .vs-item.middle {
+        font-size: 60px
+    }
+
+    .stats h2 {
+        font-size: 36px;
+    }
+
+    .stats p {
+        font-size: 24px;
+    }
+
+    /* Bottom area */
+
+}

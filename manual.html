@@ -1,0 +1,120 @@
+<html lang='en'>
+    <head>
+        <title>Challenge - Marcus</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./modal.js"></script>
+        <script src="./apiService.js"></script>
+        <script src="./manual.js"></script>
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>The Challenge</h1>
+            <div>My first programming challenge.</div>
+        </div>
+
+        <div class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./manual.html">Manual</a>
+            <a href="./game.html">Game</a>
+            <a class="right" onclick="showModal()">Login</a>
+        </div>
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <p>Login with dummy data</p>
+              <div> Email: <input id="email" type="email" value="eve.holt@reqres.in" required readonly></div> <br>
+              <div> Password: <input id="pw" type="password" value="cityslicka" required readonly></div> <br>
+              <input class="btn" type="submit" value="Login" onclick="validateLogin()">
+              <p id="token" class="token">Token:</p>
+            </div>
+        </div>
+
+        <div class="router-outlet">
+            
+            <div class="bundle">
+                <div class="sidenav">
+                    <button class="btn">Menu</button>
+                    <div id="sidenav-content" class="sidenav-content">
+                        <a id="header-link1" class="active" onclick="jumpToHeader(1)">The Game</a>
+                        <a id="header-link2" onclick="jumpToHeader(2)">Functionality</a>
+                        <a id="header-link3" onclick="jumpToHeader(3)">Development effort</a>
+                        <a id="header-link4" onclick="jumpToHeader(4)">Backend</a>
+                        <a id="header-link5" onclick="jumpToHeader(5)">Backend Approach</a>
+                        <hr class="separator">
+                        <a href="#">Options</a>
+                    </div>
+                </div>
+            
+                <div id="content" class="content">
+                    <h1>About the programming challenge</h1>
+                    <h2 id="header1">The Game</h2>
+                    <p>
+                        This is a simple Rock, Paper, Scissors Game.<br>
+                        You can choose a option at the bottom and Player B chooses randomly one of the three options.<br>
+                        Play 100 Rounds and then you see the result.<br>
+                        Use the button at the bottom to skip fast to Round 100.<br>
+                    </p>
+                    <h2 id="header2">Functionality</h2>
+                    <p>
+                        I setup a simple website with few content to show my knowledge about
+                        responsive design, html, css and javascript.<br>
+                        I wrap the game challenge into a website to show more about my web developer skills.<br>
+                        Lot of more skills i have to show in my Full Stack Event Menagement App.<br>
+                        The programming challenge have not:<br>
+                        - implemented a backend or a connection to the backend<br>
+                        (I can show this abilitys in my Full Stack Event Menagement App)<br>
+                        - build as a Single Page 'Application'<br>
+                        (A SPA is the state of art to build an performant website od application. I used here 3 html pages.)<br>
+                        - build in a dark theme.<br>
+                        (look at the landing page index.html. The pictures are in dark theme.)<br>
+                        <b>Save</b> and <b>Options</b> Buttons have no function.
+                    </p>
+                    <p>
+                        I implement some content and some placeholders to show more functionality. <br>
+                        Feel free to test and scroll down ;)
+                    </p>
+                    <h2 id="header3">Development effort</h2>
+                    <p>
+                        Total time spent on the project: 12h<br>
+                        Including:<br>
+                        - Conception<br>
+                        - Design<br>
+                        - Development<br>
+                        - Testing<br>
+                    </p>
+                    <h2 id="header4">Backend</h2>
+                    <p>
+                        This projekt have no backend.<br>
+                        There is no function to save or load the game.<br>
+                        So far I have written my backends in Node.js. <br>
+                    </p>
+                    <h2 id="header5">Rest API approach for backend:</h2>
+                    <p>
+                        In normal case I work with an JSON Rest API. <br>
+                        First of all we have to register a new user. So every user can save his own data. <br>
+                        Then the user can login. <br>
+                        Only the user authorized by token can change his data. <br>
+                        Here we can work with the methods POST, GET, PUT, PATCH, DELETE. <br>
+                        This describe a simplified Rest API approach to contact the backend and save/load/update/delete some data. <br>
+                        Look at the <b>Login</b> Button in the toolbar. (This shows only one request out of the whole process.) <br>
+                        We contact some third party api.
+                    </p>
+                    <p class="stretch"> sth ...</p>
+                    <p class="stretch"> sth ...</p>
+                    <p class="stretch"> sth ...</p>
+                    <p class="stretch"> sth ...</p>
+                    <p class="stretch"> sth ...</p>
+                    <p class="stretch"> sth ...</p>
+                    <p class="stretch"> sth ...</p>
+                    <p class="stretch"> sth other ...</p>
+                    <p class="stretch"> sth ...</p>
+                    <p class="stretch"> sth ...</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

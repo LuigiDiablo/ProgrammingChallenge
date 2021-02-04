@@ -1,0 +1,114 @@
+<html lang='en'>
+    <head>
+        <title>Challenge - Marcus</title>
+        <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./modal.js"></script>
+        <script src="./apiService.js"></script>
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>The Challenge</h1>
+            <div>My first programming challenge.</div>
+        </div>
+
+        <div class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./manual.html">Manual</a>
+            <a href="./game.html">Game</a>
+            <a class="right" onclick="showModal()">Login</a>
+        </div>
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <p>Login with dummy data</p>
+              <div> Email: <input id="email" type="email" value="eve.holt@reqres.in" required readonly></div> <br>
+              <div> Password: <input id="pw" type="password" value="cityslicka" required readonly></div> <br>
+              <input class="btn" type="submit" value="Login" onclick="validateLogin()">
+              <p id="token" class="token">Token:</p>
+            </div>
+        </div>
+
+        <div class="router-outlet">
+            <div class="bundle">
+                <div class="bundle-text-wrapper">
+                    <h1>Some Great Game</h1>
+                    <p> <b>
+                        More informations at the manuel tab!
+                    </b> </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        voluptua.<br>
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet.
+                    </p>
+                </div>
+                <div class="bundle-img-wrapper">
+                    <img src="./game3.jpg" alt="an image that shows...." class="bundle-img">
+                </div>
+            </div>
+            <div class="bundle inverted">
+                <div class="bundle-img-wrapper">
+                    <img src="./game3.jpg" alt="an image that shows...." class="bundle-img first">
+                </div>
+                <div class="bundle-text-wrapper">
+                    <h1>Some Great Game</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        voluptua.<br>
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet.<br>
+                        <br>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<br>
+                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet.
+                    </p>
+                </div>
+                <div class="bundle-img-wrapper">
+                    <img src="./game3.jpg" alt="an image that shows...." class="bundle-img second">
+                </div>
+            </div>
+            <div class="bundle">
+                <div class="bundle-text-wrapper">
+                    <h1>Some Great Game</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        voluptua.<br>
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet.
+                    </p>
+                </div>
+                <div class="bundle-img-wrapper">
+                    <img src="./game3.jpg" alt="an image that shows...." class="bundle-img">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
